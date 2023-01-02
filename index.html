@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit App</title>
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/open-props/normalize.min.css"
+    />
+    <script type="module" src="/src/my-element.ts"></script>
+    <script type="module" src="/src/gho-input.ts"></script>
+  </head>
+  <body>
+    <my-element>
+      <p>This is child content</p>
+    </my-element>
+
+    <gho-input
+      type="text"
+      name="Name"
+      value=""
+      label="Name"
+      style="margin-inline-start: var(--size-1)"
+    ></gho-input>
+    <gho-input
+      type="number"
+      name="HouseNumber"
+      value=""
+      label="House Number"
+      style="margin-inline-start: var(--size-1)"
+    ></gho-input>
+    <gho-input
+      type="email"
+      name="Email"
+      value=""
+      label="Email"
+      style="margin-inline-start: var(--size-1); margin-top: var(--size-2)"
+    ></gho-input>
+  </body>
+</html>
