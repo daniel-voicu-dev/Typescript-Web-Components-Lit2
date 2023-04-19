@@ -12,18 +12,19 @@
     />
     <script type="module" src="/src/my-element.ts"></script>
     <script type="module" src="/src/gho-input.ts"></script>
+    <script type="module" src="/src/gho-select.ts"></script>
   </head>
   <body>
-    <my-element>
+    <!-- <my-element>
       <p>This is child content</p>
-    </my-element>
+    </my-element> -->
 
-    <gho-input
+    <!-- <gho-input
       type="text"
       name="Name"
       value=""
       label="Name"
-      style="margin-inline-start: var(--size-1)"
+      style="margin-inline-start: var(--size-3)"
     ></gho-input>
     <gho-input
       type="number"
@@ -38,6 +39,12 @@
       value=""
       label="Email"
       style="margin-inline-start: var(--size-1); margin-top: var(--size-2)"
-    ></gho-input>
+    ></gho-input> -->
+    <comm-select>
+      <comm-option label="1" value="1">1</comm-option>
+      <comm-option label="2" value="2">2</comm-option>
+      <comm-option label="3" value="3">3</comm-option>
+      <comm-option label="4" value="4">4</comm-option>
+    </comm-select>
   </body>
 </html>
